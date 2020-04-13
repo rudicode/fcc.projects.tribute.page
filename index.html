@@ -1,0 +1,236 @@
+<html>
+<!-- This web page was created for educational purposes as part of an assignment for freecodecamp.org -->
+<!-- more info at: https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page -->
+<!-- Responsive Web Design Projects - Build a Tribute Page -->
+
+<head>
+  <title>Tribute Page | FCC project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <style>
+    body {
+      background-image: url('assets/background-cartoon-sky-with-clouds.jpg');
+    }
+
+  @media (max-width: 500px) { /* CSS Rules */ }
+
+    main {
+      font-family: 'Raleway', sans-serif;
+      /* font-family: 'Roboto Slab', serif; */
+      /* text-align: center; */
+    }
+
+    .container {
+      font-size: 1em;
+      margin: 0 auto;
+      min-height: 300px;
+      width: 90%;
+      /* background: rgba(255, 0, 0, 0.1); */
+      display: grid;
+      /* grid-template-columns: 1fr 200px; */
+      grid-template-columns: 1fr 25%;
+      /* grid-template-rows: 1fr; */
+      grid-gap: 10px;
+      grid-template-areas:
+        "header header"
+        "article aside"
+        "footer footer";
+    }
+
+    .default-panel {
+      background: rgba(0, 0, 255, 0.1);
+      border-radius: 7px;
+    }
+
+    .yellow-text {
+      color: yellow;
+      text-shadow: 2px 2px 1px black;
+    }
+
+    .yellow-highlight {
+        background-color: yellow;
+        border-radius: 5px;
+        color: black;
+        margin: 5px;
+        padding: 5 20 5 20;
+        text-align: center;
+    }
+
+    aside {
+      grid-area: aside;
+    }
+
+    header {
+      grid-area: header;
+      text-align: center;
+    }
+
+    article {
+      grid-area: article;
+      line-height: 1.6;
+    }
+
+    footer {
+      grid-area: footer;
+      text-align: center;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 15px;
+      padding: 10px;
+    }
+
+    p {
+      margin: 5px;
+      padding: 10px;
+    }
+
+    figure {
+      font-size: 0.7em;
+      margin: 5px;
+      text-align: center;
+    }
+    img {
+      display: block;
+      height: auto;
+      margin: auto;
+      max-width: 100%;
+    }
+
+  </style>
+  <main id="main">
+    <div class="container">
+
+      <!-- header -->
+
+      <header class="default-panel">
+
+        <h1 id="title" class="yellow-text">Homer Jay Simpson</h1>
+      </header>
+
+      <!-- aside -->
+
+      <aside class="default-panel">
+        <h4 class="yellow-highlight">Homer Jay Simpson</h6>
+        <figure id="img-div">
+          <a id="tribute-link" href="https://en.wikipedia.org/wiki/Homer_Simpson" target="_blank"><img id="image" class="responsive-img" src="assets/Homer_Simpson_2006.png" alt="" /></a>
+          <figcaption id="img-caption">
+            Homer eating a doughnut with pink frosting.
+          </figcaption>
+        </figure>
+      </aside>
+
+      <!-- article -->
+
+      <article id="tribute-info" class="default-panel">
+        <h2 class="yellow-text">Life</h2>
+        <p><b>Homer Jay Simpson</b> (born May 12&nbsp;1953) is the main protagonist of the series. He is the spouse of <a href="#" title="Marge Simpson">Marge Simpson</a> and father of <a href="#" title="Bart Simpson">Bart Simpson</a>, <a href="#"
+            title="Lisa Simpson">Lisa Simpson</a>, and <a href="#" title="Maggie Simpson">Maggie Simpson</a>. Homer is overweight (said to be ~240 lbs), lazy, and often ignorant to the world around him. Although Homer has many flaws, he has shown to
+          have great caring, love, and even bravery to those he cares about and, sometimes, even others he doesn't. He served as the main protagonist of both the <a href="#" title="The Simpsons">TV series</a> and the <a href="#"
+            title="The Simpsons Movie">2007 film adaptation</a>.
+        </p>
+        <p>Homer works as a low-level safety inspector at the <a href="#" title="Springfield Nuclear Power Plant">Springfield Nuclear Power Plant</a> in <a href="#" title="Sector 7G" class="mw-redirect">Sector 7G</a>, although he is often incompetent
+          and negligent towards his duty. He spends a great deal of his time at <a href="#" title="Moe's Tavern">Moe's Tavern</a> with his lifelong friends <a href="#" title="Barney Gumble">Barney</a>, <a href="#" title="Carl Carlson">Carl</a>, <a
+            href="#" title="Lenny Leonard">Lenny</a>, and the bartender <a href="#" title="Moe Szyslak">Moe</a>. At his <a href="#" title="742 Evergreen Terrace">home</a>, he can often be found sitting on the couch mindlessly watching TV while
+          snacking on food and drinking <a href="#" title="Duff Beer">Duff</a>. Homer is also the only son of <a href="#" title="Abraham Simpson" class="mw-redirect">Abe</a> and <a href="#" title="Mona Simpson">Mona</a>. When
+          Homer gets provoked, he strangles <a href="#" title="Bart Simpson">Bart</a> for pressuring him. Even though he hates <a href="#" title="Patty Bouvier">Patty</a> and <a href="#" title="Selma Bouvier">Selma</a>, he played as Selma's husband
+          in order for her to adopt <a href="#" title="Ling Bouvier">Ling</a>. As a result of this, Homer is the legal adoptive father of <a href="#" title="Ling Bouvier">Ling Bouvier</a>.
+        </p>
+        <p>Homer may just be a normal man, but he has had many great achievements and experiences in his life. He has won a Grammy, an Academy Award, a Pulitzer Prize, been to space, and has saved Springfield many times.
+        </p>
+        <p>Homer is named after <a href="#" title="Matt Groening">Matt Groening</a>'s late father, Homer Groening. In a series of interviews in 1990, Groening reportedly stated that he named the character after the Homer Simpson in
+          <a href="#" class="extiw" title="wikipedia:The Day of the Locust">The Day Of the Locust</a>, a 1939 novel by <a href="#" class="extiw" title="wikipedia:Nathanael West">Nathanael West</a>, according to <a href="#" class="extiw"
+            title="wikipedia:Planet Simpson">Planet Simpson</a>, but neither explanation is considered definitive.
+        </p>
+        <h2 class="yellow-text">Childhood Summary</h2>
+        <p>Homer's childhood was a tragic one. He lost his mother at a young age and his father never took notice to Homer. This caused Homer to be very insecure about himself and underachieving things, thinking he lacked the skills to do so, which
+          left him behind in school and life in general and has most likely caused how he is today.
+        </p>
+        <h2 class="yellow-text">Family</h2>
+        <h4 class="yellow-text">Marge Simpson</h4>
+        <p>
+          Homer is the husband of Marge Simpson. They met when they were younger without learning who each other was before meeting again properly in high school. They have had three weddings. The pair have a very strong marriage which has survived
+          cheating, amnesia and many arguments. They have been in love since their high school senior year.
+        </p>
+        <h4 class="yellow-text">Bart Simpson</h4>
+        <p>
+          Homer's relationship with Bart is a strange one indeed; Homer has threatened Bart with murder before, yet at other times, the two get along better than anyone else. Homer usually refers to Bart as "the boy" and has mentioned spanking and
+          beating Bart before. All that is ever shown, however, is either Homer growling and lunging for Bart, chasing him, or else strangling him. Homer was held in a mental hospital once due to his aggression with Bart, although, once the doctors
+          realized that Bart was in fact real, they released him. It is implied that Bart is the reason that Homer is bald. Homer blames most of his misfortunes on Bart and is the strict abuser of Bart in the strict abusive family. As a result, Bart
+          usually takes advantage of his father's stupidity to humiliate him (as he does with most authority figures). Because of their often turbulent relationship, Bart commonly refers to Homer as Homer instead of Dad, especially when Bart is
+          humiliating him. Homer has also implied that he wouldn't mind if Bart changed 100% and that he isn't very attached to him as he is.
+        </p>
+        <p>
+          Homer and Bart share the same sense of humor and adventure and therefore are almost always partners during wild escapades, such as when Homer became a truck driver or when they were arrested together in Japan. They spend a lot of time
+          together watching TV, and although they spend a lot of time together, Homer doesn't take much of an interest in his life while Bart mostly ignores Homer. Whenever Homer does partake in a father-son activity with Bart, it is usually to beat
+          Flanders at something, although, interestingly, Homer is truly offended when Bart gets a "big brother" to spend time with. Although Bart oftentimes acts resentful of Homer, he really loves when his father shows an interest in him, in fact,
+          when he cheated on an IQ test and was labeled a genius, consequently winning Homer's affection, he was reluctant to admit he had cheated (even though he was miserable at school) simply because he didn't want matters to go back to how they
+          had been with Homer.
+        </p>
+        <h4 class="yellow-text">Lisa Simpson</h4>
+        <p>
+          Homer is very protective of Lisa and shows a soft side to her that Bart has never seen. She is his little girl and when Homer disappoints her or makes her sad he will often times go to the end of the earth to make things right. Homer
+          sometimes does activities with Lisa which he doesn't enjoy simply to make her happy, such as attending the ballet. That being said, Lisa and Homer do not get along very well. When Homer does accompany Lisa on such intellectual trips he
+          oftentimes embarrasses her, usually by either falling asleep, saying something rude or unintellectual, or else displaying disgusting habits (scratching his butt, burping, etc.). When Lisa becomes upset, Homer can't usually figure out what
+          it is he did wrong. They have little to talk about because of their differences in interests and intellectual caliber, so Homer far prefers to do tasks with Bart and leave Lisa alone.
+        </p>
+        <p>He is often annoyed by her love of music and constantly yells at her to tell her to stop making a racket. Lisa is also the moral center of the family, which leads to further clashes between her and Homer, who doesn't really care about the
+          ethics of the various situations he has been involved in. Lisa's intelligence is likely the largest cause that Homer and her do not get along better. Whenever Lisa does make an attempt to protest or explain something to her father, she
+          usually uses such advanced vocabulary that Homer simply nods and replies, "Yes, sweetie," even though it makes no sense whatsoever in the context of the conversation.
+        </p>
+        <p>However, Homer is very proud of Lisa's intelligence and will brag about it to friends and co-workers. Lisa acknowledges her father's shortcomings but does love him and appreciates when he puts in the effort to better himself for her sake.
+          Although he is often insensitive to her and her needs (once turning her room into a cellular tower without a second thought and then forcing her to bunk with Bart- also without a second thought), Homer does try to be a good father and puts
+          her happiness above anything else. For example, when he was first told that she was gifted and that she should find a mental stimulation to help with her gift, he gave up the $200 dollars the family had saved for a new air conditioner to
+          buy her saxophone instead and earned gratitude from her. In Homer Is Where the Art Isn't, Lisa secretly got a art painting out while switching the painting with a bag and Lisa wanted to be closer with Homer.
+        </p>
+        <h4 class="yellow-text">Maggie Simpson</h4>
+        <p>
+          Homer forgets Maggie exists-frequently. Once, when talking about their "two" children, Marge interrupted and told Homer that they had three children, to which he replied that the dog didn't count as a child before recalling Maggie. Similar
+          dialogue is recurrent throughout the series. Also, whenever Maggie is referred to by her full name, Margaret, Homer has no clue as to who is being referenced. When Homer does try to interact with Maggie, he oftentimes frightens her
+          unintentionally.
+        </p>
+        <p>Homer is highly irresponsible with Maggie, often giving her dangerous objects to play with and once completely losing her because she crawled out of her crib. Maggie was an accident baby (as was Bart and Lisa) and having her meant that
+          Homer had to quit his dream job at the bowling alley and instead take his job back at the nuclear power plant so that he would make enough money to support a third child. This was not ideal for Homer because he had only recently quit from
+          the power plant in a very rude and flamboyant fashion. When he returned, Smithers and Burns had a good gloat that he was crawling back and, to further depress him, installed a plaque dead center in front of his desk that read, "don't
+          forget, you're here forever." </p>
+        <p>
+          Because of all this, Homer fiercely resented the prenatal Maggie, but, as soon as he first laid eyes on her, he immediately fell in love. There are no baby pictures of Maggie in the Simpson household because Homer hangs them "where he needs
+          the most cheering up"-- at work. In his office, he has created a mural of Maggie's baby pictures which strategically cover up one half of the N and the entire T of don't, the GET of forget, the YOU'RE, the E of here, and the FOREVER on his
+          plaque with pictures of Maggie, so that it reads "do it for her." It can be argued from this that Maggie cheers up Homer more than his other two children.
+        </p>
+        <p>Although they don't communicate well, Homer and Maggie share a special bond and he loves her deeply. Maggie's first word was "daddy", which he couldn't hear (due to being out of Maggie's room and shutting the door as he exited). Maggie
+          once saved a captive Homer, who was impressed and grateful to his daughter. He has shown love for Maggie as he protected her from bullying babies in Eeny Teeny Maya, Moe and earned a hug from his daughter who punched out a baby that knocked
+          him down. Homer later saved her from being carried off by a bald eagle and made sure to hold her close, while punching the bird so it wouldn't try to take her again.
+        </p>
+        <h4 class="yellow-text">Sources</h4>
+
+        <ul>
+          <li>
+
+            <a id="tribute-link" href="https://en.wikipedia.org/wiki/Homer_Simpson" target="_blank">Homer Simpson</a> on wikipedia.org.
+          </li>
+          <li>
+            <a id="tribute-link" href="https://simpsons.fandom.com/wiki/Homer_Simpson" target="_blank">Homer Simpson</a> on fandom.com.
+          </li>
+        </ul>
+      </article>
+
+      <!-- footer -->
+
+      <footer class="default-panel">
+        <h6>copyleft 2020</h6>
+      </footer>
+    </div>
+  </main>
+  <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+  <script src="bundle.js"></script>
+</body>
+
+</html>
